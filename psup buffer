@@ -1,0 +1,68 @@
+# calculating BMI
+weight = int(input("Weight in kg: "))
+height = float(input("Height in metres: "))
+a = height*height
+BMI = weight/a
+print(BMI)
+
+# Area of a circle
+import math
+pi = math.pi
+r = float(input("Enter radius: "))
+area = pi*r*r
+print(area)
+
+#Simple interest
+P = float(input("Enter the principle amount: "))
+R = float(input("Enter the interest rate per annum (in %): "))
+T = int(input("Enter the no. of years: "))
+SI = (P*R*T)/100
+print(SI,"%")
+
+#Acceleration
+d = float(input("Enter distance travelled: "))
+t = int(input("Enter time taken: "))
+v = d/t
+acc = v/t
+print(f"{acc} m/s2")
+
+#Velocity using mass, force
+f = float(input("Enter force of the body: "))
+m = int(input("Enter mass of body: "))
+t = int(input("Enter time taken: "))
+a = f/m
+v = a*t
+print(v,"m/s")
+
+#Pyramid pattern
+a= 10
+for i in range(1,a+1):
+    for j in range(1,i+1):
+        print("&",end="")
+    print()
+
+#kms to miles
+kms = float(input("Enter distance in kms: "))
+miles = kms * 0.621371
+print(miles)
+
+#finding joules
+m = int(input("Enter mass of body: "))
+v = float(input("Enter velocity of body: "))
+v2 = v*v
+energy = (m*v2)/2
+print(energy)
+
+#distance between two points
+import math
+a = (input("enter x1 y1: "))
+b = (input("enter x2 y2: "))
+p1 = list(map(int,a.split()))
+p2 = list(map(int,b.split()))
+x1 = p1[0]
+y1 = p1[1]
+x2 = p2[0]
+y2 = p2[1]
+f = ((x2 - x1)**2 )+((y2-y1)**2)
+dist = math.sqrt(f)
+print(dist)
